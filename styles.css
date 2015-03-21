@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
+ 
+/*header {
+  background-color: hsl(0, 75%, 75%);
+}
+
+nav {
+  background-color: hsl(30, 75%, 75%);
+}
+
+main {
+  background-color: hsl(60, 75%, 75%);
+}
+
+main > header {
+  background-color: hsl(90, 75%, 75%);
+}
+
+#hero-unit {
+  background-color: hsl(120, 75%, 75%);
+}
+
+#article-list {
+  background-color: hsl(150, 75%, 75%);
+}
+
+article {
+  background-color: hsl(180, 75%, 75%);
+}
+
+blockquote {
+  background-color: hsl(210, 75%, 75%);
+}
+
+form {
+  background-color: hsl(240, 75%, 75%);
+}
+
+aside {
+  background-color: hsl(270, 75%, 75%);
+}
+
+footer {
+  background-color: hsl(300, 75%, 75%);
+}
+
+main > footer {
+  background-color: hsl(330, 75%, 75%);
+}*/
+ 
+dt {
+  font-weight: bold;
+}
+ 
+dd {
+  margin-bottom: 1em;
+}
+ 
+.container {
+  width: 80%;
+  max-width: 54em;
+  margin: 0 auto 1.5em;
+}
+ 
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ 
+.list-inline > li {
+  display: inline-block;
+ 
+}

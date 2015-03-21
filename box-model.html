@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Working with the Box Model</title>
+ 
+    <style>
+      .box {
+          width: 500px;
+          height: 300px;
+          border-top: 25px solid black;
+          border-right: 25px solid black;
+          border-bottom: 25px solid black;
+          border-left: 25px solid black;
+          padding-top: 10px;
+          padding-right: 10px;
+          padding-bottom: 10px;
+          padding-left: 10px;
+
+          margin: 15px;
+      }
+
+      .content-box{
+          box-sizing: content-box;
+      }
+
+      .border-box{
+          box-sizing: border-box;
+      }
+
+
+      /* --- Set Up --- */
+      body {
+          font-family: 'Helvetica Neue', Arial, sans-serif
+      }
+
+      li {
+          margin-bottom: 5px;
+      }
+
+      .title {
+          text-transform: uppercase;
+          font-size: 18px;
+          font-weight: bold;
+          color: #bbb;
+          display: block;
+          border-bottom: 1px solid #ccc;
+          margin-bottom: 10px;
+      }
+    </style>
+  </head>
+ 
+  <body>
+    <div class="box border-box">
+        <span class="title">Border-box</span>
+        <ul>
+            <li>Element Width: 500px</li>
+            <li>Element Height: 300px</li>
+            <li>The width and height properties include the padding and border, but not the margin.</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">MDN Box-sizing</a></li>
+        </ul>
+    </div>
+ 
+    <div class="box content-box">
+        <span class="title">Content-box</span>
+        <ul>
+            <li>Element Width: 570px (25px + 10px + 500px + 10px + 25px)</li>
+            <li>Element Height: 370px (25px + 10px + 300px + 10px + 25px)</li>
+            <li>(Default style) The width and height properties are measured including only the content, but not the border, margin, or padding.</li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing">MDN Box-sizing</a></li>
+        </ul>
+    </div>
+  </body>
+</html>
